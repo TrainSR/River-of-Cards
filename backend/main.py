@@ -27,3 +27,6 @@ def get_string():
 
 # cd backend
 # uvicorn main:app --reload
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host=FRONTEND_URL, reload=True)  # dùng FRONTEND_URL + reload
