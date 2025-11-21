@@ -30,3 +30,9 @@ def get_string():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", reload=True)  # cho phép truy cập từ mọi nơi
+
+
+
+print("ENVIRONMENT VARIABLES:")
+for k, v in os.environ.items():
+    print(k, "=", v)
