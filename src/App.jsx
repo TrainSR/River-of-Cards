@@ -48,8 +48,8 @@ function App() {
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
-  // console.log(cardpacks);
-  // console.log(backendUrl);
+  console.log(cardpacks);
+  console.log(backendUrl);
   return (
     <div>
       <div className="full-background">

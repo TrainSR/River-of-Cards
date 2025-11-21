@@ -27,6 +27,10 @@ def get_string():
 
 # cd backend
 # uvicorn main:app --reload
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host=FRONTEND_URL, reload=True)  # dùng FRONTEND_URL + reload
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host=FRONTEND_URL, reload=True)  # dùng FRONTEND_URL + reload
+    uvicorn.run("main:app", host="0.0.0.0", reload=True)  # cho phép truy cập từ mọi nơi
